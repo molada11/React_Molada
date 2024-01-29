@@ -1,0 +1,1075 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffffff;
+    background-image: url("Images/inicio3.jpg");
+    /*background-image: url("Images/inicio.jpg");*/
+    background-size: contain; /* Otra opción es "cover" según tus necesidades */
+    background-repeat: no-repeat;
+    opacity: 0.91;
+    font-family: 'Kalnia', sans-serif;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-self: flex-start;
+  }
+
+  .imagen{
+    width: 100px;
+    height: 90px;
+    margin-left: 120%;
+    border-radius: 30px;
+    margin-top: 10px;
+
+  }
+
+ .contenedor1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  align-self: flex-start;
+}
+
+.imagen1{
+  width: 55px;
+  height: 50px;
+  margin-left: 45%;
+  border-radius: 100px;
+
+}
+
+.inicio {
+  width: 819px;
+  height: 570px;
+  opacity: 0.85;
+  margin-left: 300px;
+  
+}
+.apple{
+  width: 138px;
+  height: 45px;
+  border-radius: 3%;
+}
+.google {
+  width: 138px;
+  height: 45px;
+  border-radius: 3%;
+}
+.Redes{
+  width: 280px;
+  height: 65px;
+  filter: hue-rotate(159deg);
+}
+.sociales{
+margin-top: 10px;
+}
+
+.fb {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin-left: -5px;
+  
+}
+.tw {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+.in {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+.insta {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin-left: 10px;
+}
+
+.principio-container {
+  background-color: #ffffff;
+  width: 700px;
+  height: 280px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  margin-left: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.principio {
+  text-align: center;
+  color: #2b6888;
+  margin-top: 15px;
+}
+
+.titulo {
+  font-size: 3em;
+  font-family: 'Kalnia', sans-serif;
+  color: #2b6888;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.principio p {
+  color: #2b6888; /* Color de texto negro */
+}
+#encuentranos-info {
+  color: white;
+}
+
+
+/* Estilos para la barra de navegación (navbar) */
+.navbar {
+  background-color: #2b6888;
+  padding:35px 0;
+  text-align: center;
+  position: fixed; /* Fija la barra de navegación en la parte superior */
+  top: 0; /* Coloca la barra de navegación en la parte superior */
+  width: 100%; /* Ancho completo */
+  z-index: 999; /* Asegura que esté en la parte superior */
+  margin-top: -25px;
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between;
+  height: 150px;
+  
+  
+}
+
+.navbar ul {
+  list-style: none;
+  padding: -27px;
+  margin: -17px;
+  margin-top: -20px;
+  margin-left: 220px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+
+/* Estilos para los enlaces en la barra de navegación */
+.navbar ul li a {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: rgb(255, 255, 255); /* Color del texto de los enlaces */
+  font-size: 24px; /* Tamaño del texto de los enlaces */
+  font-weight: bold; /* Texto en negrita */
+  transition: color 0.3s; /* Transición de color al pasar el mouse */
+  margin: 0 10px; /* Espacio entre los enlaces */
+  font-family: 'Kalnia', sans-serif;
+  
+
+  
+}
+
+.navbar ul li a:hover {
+  color: #23c8ff; /* Cambia el color al pasar el mouse por encima de los enlaces */
+}
+
+/* Estilo para la barra horizontal */
+.horizontal-bar {
+  background-color: #ffffff;
+  height: 2.5px; /* Ajusta la altura de la barra como desees */
+  width: 56%; /* Ancho completo */
+  margin: 10px;
+  margin-top: 2px;
+  margin-left: 325px;
+  position: absolute; /* Posición absoluta para que esté debajo de los elementos de la barra */
+  top: 100px; /* Ajusta la posición vertical debajo de los botones */
+  z-index: 1; /* Asegura que la barra esté detrás de los elementos de la barra */
+  
+}
+
+
+/*botón de búsqueda*/
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-right: 3%;
+    
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    border-radius: 30px;
+}
+
+.search-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Añadir estilos al ícono utilizando Font Awesome */
+.search-button i {
+  font-size: 20px;
+}
+
+/*Locura*/
+ /* Estilos CSS para el pie de página */
+ footer {
+  background-color: #2b6888; /* Amarillo */
+  padding: 25px;
+  text-align: center;
+  font-family: 'Calibri', sans-serif;
+  color: #ffffff;
+}
+
+footer div {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 19px;
+}
+
+footer h4 {
+  font-size: 22px;
+  font-family: 'Kalnia', sans-serif;
+
+}
+
+footer p, footer ul {
+  font-size: 17px;
+  font-family: 'Kalnia', sans-serif;
+
+}
+
+footer a {
+  text-decoration: none;
+  color: #f7f6f6;
+  margin: 10px;
+}
+
+/* Estilos CSS para alinear el contenido a la izquierda y personalizar el texto */
+
+
+  p {
+    font-size: 22px; /* Tamaño de fuente más grande */
+    color: #f7f6f6; /* Texto en blanco */
+    font-family: 'Kalnia', sans-serif;
+    
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+  }
+
+  
+  .contacto{
+    font-size: 12px;
+    color: #f7f6f6;;
+  }
+  .contacto-background {
+    background-image: url('Images/inicio4.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Ajusta el color del texto para asegurar visibilidad */
+    /* Agrega estilos adicionales según sea necesario */
+  }
+
+  /*Captura de logo de Nopack*/
+  .Contenido {
+    display: flex; /* Establece un contenedor flexible */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+.texto {
+    flex: 1; /* El texto ocupa el espacio restante en el contenedor */
+    
+}
+
+  .imagenPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-self: flex-start;
+  }
+
+  .imagen23 {
+    width: 400px;
+    height: 280px;
+    margin-left: -30%;
+    border-radius: 100px;
+    margin-top: 40px;
+  }
+
+  /*Boton compra ya*/
+  .Contenido {
+    
+    text-align: center; /* Alinea el texto en el centro horizontal */
+  }
+
+
+
+
+.mi-ul {
+  background-color: #2b6888;/* Otros estilos para el ul, si los necesitas */
+}
+
+#titulonoticias {
+  color: #2b6888 !important;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 20px; 
+}
+
+
+
+.container {
+  max-width: 1000px;
+  margin-left: 270px !important;
+  margin: 50px auto;
+  background-color: #2b6888;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(124, 14, 14, 0.1);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 28px;
+}
+.container:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s ease-out forwards 0.2s;
+  
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-family: 'Kalnia', sans-serif;
+  font-weight: 700; /* Otra opción para poner el texto en negrita */
+}
+
+header p {
+  color: #ffffff;
+}
+
+section h2 {
+  color: #ffffff;
+  border-bottom: 2px solid #f6f8f9;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s ease-out forwards 0.2s;
+}
+
+section p {
+  color: #ffffff;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+/* Estilo para enlaces dentro del contenido */
+section a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Efecto de cambio de color en hover para enlaces */
+section a:hover {
+  color: #0056b3;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* stylePlantilla.css */
+
+
+
+/* Ajusta los estilos del botón de navegación según tus necesidades */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: #3498db; /* Color azul oscuro */
+  background-color: transparent;
+  border: none;
+}
+
+/* Estilos modernos para la lista y los elementos de lista en la sección de servicios con la clase 'servicios' */
+.servicios {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.servicios li {
+  width: 48%; /* Ancho de cada elemento de lista */
+  font-size: 18px;
+  font-family: 'Kalnia', sans-serif;
+  margin-bottom: 15px; /* Espacio entre elementos de la lista */
+  color: #1a2a49; /* Color del texto de los elementos de la lista */
+  background-color: #ffffff; /* Fondo de los elementos de la lista */
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+.servicios li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicios a {
+  text-decoration: none;
+  color: #1a2a49; /* Color del texto de los enlaces */
+  transition: color 0.3s; /* Transición de color al pasar el mouse por encima de los enlaces */
+}
+
+/* Estilo para cambiar el color del enlace al pasar el mouse */
+.servicios a:hover {
+  color: #23c8ff;
+}
+hr {
+  border: 0; /* Elimina el borde predeterminado */
+  height: 3px; /* Ajusta el grosor de la línea */
+  background-color: #2b6888;; /* Color de la línea, ajusta según sea necesario */
+  margin: 20px 0; /* Ajusta el margen según sea necesario */
+  margin-left: 400px;
+  margin-right: 400px;
+}
+/* Estilos para la sección del blog */
+#blog {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+#blog h2 {
+  color: #333;
+  text-align: center;
+  font-size: 56px;
+}
+
+#blog .articulos {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#blog .articulo {
+  width: 30%;
+  border: 5px solid #2b6888;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#blog .articulo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#blog .articulo h3 {
+  margin: 10px;
+  color: #2b6888; ;
+}
+
+#blog .articulo p {
+  margin: 10px;
+  color: #000000;
+}
+/* Agrega estos estilos para el botón */
+.seguir-leyendo-btn {
+  background-color: #2b6888; /* Color azul (#3498db) o el que prefieras */
+  color: #ffffff; /* Texto en blanco */
+  padding: 10px 20px; /* Ajusta el padding según sea necesario */
+  font-family: 'Kalnia', sans-serif;
+  font-size: 16px; /* Ajusta el tamaño del texto según sea necesario */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 30px;
+  margin-left: 140px;
+  font-weight: bold;
+}
+
+.seguir-leyendo-btn:hover {
+  background-color: #2980b9; /* Color azul oscuro (#2980b9) o el que prefieras */
+}
+
+
+/* Añade más estilos según sea necesario */
+
+/* styleEmpleados.css */
+#empleados {
+  background-image: url("Images/inicio2.jpg");
+  background-color: #2b6888;
+  border: 4px solid #000000;
+  padding: 50px 0;
+  width: 1000px;
+  height: 1100px;
+  margin-left: 270px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.equipo-titulo {
+  margin-top: 30px;
+  color: #000000;
+  
+}
+
+.empleados-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 800px;
+  margin-left: 90px;
+
+  
+}
+
+.empleado {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  
+  border: 4px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.empleado img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.nombre-empleado {
+  color: #2b6888;
+}
+
+.descripcion-empleado {
+  color: #000000;
+}
+
+/* styleInstalaciones.css */
+#instalaciones {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.instalaciones-titulo {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2b6888;
+  font-size: 42px;
+}
+
+.tour-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+}
+
+.tour-item {
+  flex: 0 1 calc(30% - 20px);
+  margin: 10px;
+  text-align: left;
+  overflow: hidden; /* Para ocultar el contenido que sobresale en animaciones */
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.tour-item:hover {
+  transform: scale(1.05);
+}
+
+.tour-item img {
+  max-width: 100%;
+  height: 250px; /* Ajusta la altura según tus preferencias */
+  width: 450px; /* Ajusta el ancho según tus preferencias */
+  object-fit: cover; /* Ajusta la propiedad object-fit según tus preferencias */
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.tour-titulo {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #2b6888;
+  text-align: center;
+}
+
+.tour-descripcion {
+  font-size: 18px;
+  color: #000000;
+}
+
+.tour-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px; /* Ajusta el valor según sea necesario */
+}
+
+.tour-item {
+  flex: 0 1 calc(30% - 20px);
+  margin: 10px;
+  text-align: left;
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+
+/* Estilo para la sección principal */
+
+.somos {
+  color: #2b6888; /* Cambia el color del texto a tu preferencia */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 40px; /* Agrega espacio en la parte inferior del encabezado */
+  font-size: 42px;
+}
+
+.quienesSomosSection {
+  background-color: #2b6888;
+  padding: 20px;
+  width: 1250px;
+  margin-left: 140px;
+  border-radius: 15px;
+}
+
+/* Estilo para la clase container */
+.quienesSomosContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+  
+}
+
+/* Estilo para la clase content */
+.quienesSomosContent {
+  flex: 1;
+  margin-right: 20px;
+ 
+}
+
+/* Estilo para el título con clase 'historiaTitulo' */
+.historiaTitulo {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Estilo para el párrafo con clase 'parrafoHistoria' */
+.parrafoHistoria {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el título con clase 'misionTitulo' */
+.misionTitulo {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Estilo para el párrafo con clase 'parrafoMision' */
+.parrafoMision {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 20px;
+  
+}
+
+/* Estilo para el título con clase 'compromisoTitulo' */
+.compromisoTitulo {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Estilo para el párrafo con clase 'parrafoCompromiso' */
+.parrafoCompromiso {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 20px;
+  
+}
+
+/* Asegura que las imágenes estén una encima de la otra */
+.quienesSomosImageContainer img {
+  height: 350px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Puedes ajustar este margen según sea necesario */
+  border-radius: 15px;
+}
+
+
+
+.servicios-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.servicios-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicios-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.servicios-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+  
+}
+
+.servicio {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid #2b6888;;
+}
+
+.servicio:hover {
+  transform: scale(1.05);
+}
+
+.servicio img {
+  width: 100%;
+  height: 200px; /* Ajusta la altura según tus preferencias */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.servicio h3 {
+  font-size: 18px;
+  margin: 15px;
+  color: #2b6888;
+  text-align: center;
+}
+
+.servicio p {
+  font-size: 16px;
+  margin: 0 15px 15px 15px;
+  color: #000000;
+}
+
+.servicios-image-container {
+  flex: 1;
+  max-width: 400px;
+}
+
+.servicios-image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(3, 3, 3, 0.1);
+
+}
+
+#serviciosTitulo {
+  color:#2b6888;
+  text-align: center;
+  font-size: 40px;
+}
+
+#serviciosDescripcion {
+  color: #000000;
+}
+
+
+/*Estilos para el formulario*/
+.contacto {
+  font-size: 42px;
+}
+.contacto-section {
+  background-color: #2b6888;
+  padding: 60px 0;
+  width: 700px;
+  border-radius: 15px;
+  margin-left: 340px;
+}
+
+.contacto-container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.formulario-contacto {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campo-formulario {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.campo-formulario label {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  width: 500px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.campo-formulario textarea {
+  height: 150px;
+}
+
+.boton-enviar {
+  background-color: #ffffff;
+  color: #2b6888;
+  padding: 12px 20px;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Kalnia', sans-serif;
+  
+}
+
+/* stylePlantilla.css */
+
+.ubicacion {
+  margin: 20px auto;
+  max-width: 1800px;
+  border: 2px solid #2b6888; /* Cambiado a un borde azul */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mapa {
+  width: 100%;
+  height: 450px; /* Aumentado el tamaño del mapa */
+}
+
+#dondeEncontrarnos{
+  text-align: center;
+  color: #2b6888; /* Color azul */
+  font-size: 42px;
+}
+
+
+/* Estilos adicionales según tus preferencias */
+.imagen-container {
+  position: relative;
+}
+
+.descripcion-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#consejos-bucales {
+  color: #2b6888; /* Cambia el color a azul (#3498db) o el que prefieras */
+  text-align: center;
+  margin-top: -50px; /* Ajusta el margen según tus necesidades */
+  font-size: 42px;
+}
+
+#empleados {
+  text-align: center;
+  padding: 20px;
+}
+
+.equipo-titulo {
+  color: #333;
+}
+
+.empleados-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilos para las tarjetas */
+.tarjeta {
+  width: 350px;
+  height: 450px;
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 2s ease; /* Ajusta la velocidad y suavidad aquí */
+  transform-style: preserve-3d;
+}
+
+.tarjeta:hover {
+  transform: rotateY(180deg);
+}
+
+.cara {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cara-frontal,
+.cara-trasera {
+  transform: rotateY(0deg);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.cara-trasera {
+  transform: rotateY(180deg);
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  
+}
+
+h3, p, .puesto-empleado {
+  margin: 10px;
+  color: #2b6888;
+}
+
+.cara-trasera p.descripcion-empleado {
+  color: #2b6888; /* Color azul */
+  font-size: 18px; /* Tamaño de letra más pequeño */
+  font-weight: bold;
+}
+.estilo-visita {
+  text-align: center;
+  margin-bottom: -70px;
+}
+
+#visita {
+  color: #2b6888;
+  font-size: 42px;
+ 
+}
+
+.scale-animation {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  margin-bottom: 2px; /* Ajusta el espacio entre frases */
+}
+
+.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.titulo,
+.subtitulo,
+.texto {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  margin-bottom: -10px; /* Ajusta el espacio entre frases */
+}
+
+.titulo.show,
+.subtitulo.show,
+.texto.show {
+  opacity: 1;
+  transform: translateY(0);
+}
