@@ -1,8 +1,10 @@
 import React from 'react';
+import { Zoom } from 'react-reveal';
 
 
 const Equipo = () => {
   const empleados = [
+    
     {
       nombre: 'Dra. María Pérez',
       puesto: 'Odontóloga Principal',
@@ -34,6 +36,7 @@ const Equipo = () => {
   ];
 
   return (
+    <Zoom>
     <section id="empleados">
       <h2 className="equipo-titulo">Nuestro Equipo</h2>
       <div className="empleados-container">
@@ -51,6 +54,7 @@ const Equipo = () => {
         ))}
       </div>
     </section>
+    </Zoom>
   );
 };
 

@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './CarruselImagenes.css'; // Importa el archivo CSS
+import { Zoom } from 'react-reveal';
 
 const CarruselImagenes = () => {
   const imagenes = [
@@ -31,6 +32,7 @@ const CarruselImagenes = () => {
   };
 
   return (
+    <Zoom>
     <Slider {...settings}>
       {imagenes.map((imagen, index) => (
         <div key={index}>
@@ -43,6 +45,7 @@ const CarruselImagenes = () => {
         </div>
       ))}
     </Slider>
+    </Zoom>
   );
 };
 

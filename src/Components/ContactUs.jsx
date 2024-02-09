@@ -50,7 +50,7 @@ const ContactUs = () => {
             ) : (
               <form ref={form} onSubmit={sendEmail} id="formularioContacto">
                 <div className="campo-formulario">
-                  <label htmlFor="nombre">Nombre:</label>
+                  <label htmlFor="nombre">Nombre y Apellidos:</label>
                   <input
                     type="text"
                     id="nombre"
@@ -59,15 +59,7 @@ const ContactUs = () => {
                   />
                 </div>
 
-                <div className="campo-formulario">
-                  <label htmlFor="apellidos">Apellidos:</label>
-                  <input
-                    type="text"
-                    id="apellidos"
-                    name="apellidos"
-                    required
-                  />
-                </div>
+              
 
                 <div className="campo-formulario">
                   <label htmlFor="email">Correo Electrónico:</label>

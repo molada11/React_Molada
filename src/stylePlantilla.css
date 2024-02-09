@@ -4,15 +4,7 @@
     box-sizing: border-box;
   }
   
-  body {
-    background-color: #ffffff;
-    background-image: url("Images/inicio3.jpg");
-    /*background-image: url("Images/inicio.jpg");*/
-    background-size: contain; /* Otra opción es "cover" según tus necesidades */
-    background-repeat: no-repeat;
-    opacity: 0.91;
-    font-family: 'Kalnia', sans-serif;
-  }
+  
 
   .contenedor {
     display: flex;
@@ -50,6 +42,7 @@
   height: 570px;
   opacity: 0.85;
   margin-left: 300px;
+  
   
 }
 .apple{
@@ -109,6 +102,7 @@ margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 
 
@@ -116,6 +110,7 @@ margin-top: 10px;
   text-align: center;
   color: #2b6888;
   margin-top: 15px;
+  
 }
 
 .titulo {
@@ -154,15 +149,19 @@ margin-top: 10px;
 
 .navbar ul {
   list-style: none;
-  padding: -27px;
-  margin: -17px;
-  margin-top: -20px;
-  margin-left: 220px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-right: 150px;
 }
 
 .navbar li {
+  margin: 0 5px; /* Ajusta la separación entre elementos li según tus necesidades */
   display: inline;
+  margin-right: 25px;
 }
+
+
 
 
 /* Estilos para los enlaces en la barra de navegación */
@@ -174,9 +173,7 @@ margin-top: 10px;
   transition: color 0.3s; /* Transición de color al pasar el mouse */
   margin: 0 10px; /* Espacio entre los enlaces */
   font-family: 'Kalnia', sans-serif;
-  
 
-  
 }
 
 .navbar ul li a:hover {
@@ -187,48 +184,14 @@ margin-top: 10px;
 .horizontal-bar {
   background-color: #ffffff;
   height: 2.5px; /* Ajusta la altura de la barra como desees */
-  width: 56%; /* Ancho completo */
+  width: 70%; /* Ancho completo */
   margin: 10px;
   margin-top: 2px;
-  margin-left: 325px;
+  margin-left: 305px;
   position: absolute; /* Posición absoluta para que esté debajo de los elementos de la barra */
   top: 100px; /* Ajusta la posición vertical debajo de los botones */
   z-index: 1; /* Asegura que la barra esté detrás de los elementos de la barra */
   
-}
-
-
-/*botón de búsqueda*/
-.search-container {
-    display: flex;
-    align-items: center;
-    max-width: 250px;
-    margin: 0 auto;
-    margin-right: 3%;
-    
-}
-
-.search-input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    border-radius: 30px;
-}
-
-.search-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-/* Añadir estilos al ícono utilizando Font Awesome */
-.search-button i {
-  font-size: 20px;
 }
 
 /*Locura*/
@@ -265,6 +228,18 @@ footer a {
   margin: 10px;
 }
 
+.copyright {
+  background-color: #2b6888;
+  color: #fff; /* Color blanco para el fondo */
+  text-align: center;
+  padding: 10px;
+}
+
+.copyright p {
+  color: #fff; /* Color blanco para el texto dentro del elemento p */
+  margin: 0; /* Asegura que no haya margen adicional en el elemento p */
+}
+
 /* Estilos CSS para alinear el contenido a la izquierda y personalizar el texto */
 
 
@@ -281,7 +256,7 @@ footer a {
   
   .contacto{
     font-size: 12px;
-    color: #f7f6f6;;
+    color: #f7f6f6;
   }
   .contacto-background {
     background-image: url('Images/inicio4.jpg'); /* Ruta de tu imagen de fondo */
@@ -337,8 +312,6 @@ footer a {
   font-size: 38px;
   margin-bottom: 20px; 
 }
-
-
 
 .container {
   max-width: 1000px;
@@ -838,7 +811,7 @@ hr {
 #serviciosTitulo {
   color:#2b6888;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #serviciosDescripcion {
@@ -846,47 +819,48 @@ hr {
 }
 
 
-/*Estilos para el formulario*/
+/* Estilos para el formulario */
+
 .contacto {
-  font-size: 42px;
+  font-size: 22px;
 }
+
 .contacto-section {
   background-color: #2b6888;
-  padding: 60px 0;
-  width: 700px;
-  border-radius: 15px;
-  margin-left: 340px;
+  padding: 35px 0;
+  width: 550px;
+  border-radius: 14px;
+  margin: 0 auto; /* Centrar horizontalmente */
 }
 
 .contacto-container {
-  max-width: 500px;
+  max-width: 450px;
   margin: 0 auto;
   text-align: center;
 }
 
 .formulario-contacto {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .campo-formulario {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   width: 100%;
 }
 
 .campo-formulario label {
   display: block;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 8px;
   color: #ffffff;
 }
 
 .campo-formulario input,
 .campo-formulario textarea {
-  width: 500px;
-  padding: 10px;
+  width: 450px;
+  padding: 12px;
   font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -894,26 +868,27 @@ hr {
 }
 
 .campo-formulario textarea {
-  height: 150px;
+  height: 65px;
 }
 
 .boton-enviar {
   background-color: #ffffff;
   color: #2b6888;
-  padding: 12px 20px;
-  font-size: 22px;
+  padding: 14px 24px;
+  font-size: 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: 'Kalnia', sans-serif;
-  
 }
+
+
 
 /* stylePlantilla.css */
 
 .ubicacion {
   margin: 20px auto;
-  max-width: 1800px;
+  max-width: 1450px;
   border: 2px solid #2b6888; /* Cambiado a un borde azul */
   border-radius: 8px;
   overflow: hidden;
@@ -962,6 +937,7 @@ hr {
 
 .equipo-titulo {
   color: #333;
+  font-size: 42px;
 }
 
 .empleados-container {
@@ -1044,7 +1020,7 @@ h3, p, .puesto-empleado {
 
 #visita {
   color: #2b6888;
-  font-size: 42px;
+  font-size: 50px;
  
 }
 
@@ -1072,4 +1048,285 @@ h3, p, .puesto-empleado {
 .texto.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/*Estilo preloader*/
+.todo {
+  background-color: #ffffff;
+   background-image: url("Images/inicio3.jpg");
+    
+    background-size: contain; /* Otra opción es "cover" según tus necesidades */
+    background-repeat: no-repeat;
+    opacity: 0.91;
+    font-family: 'Kalnia', sans-serif;
+ 
+}
+@keyframes subtleSlideText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+}
+
+/* Estilos para tamaños de pantalla medianos (por ejemplo, tablets) */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .contenedor,
+  .contenedor1 {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .imagen,
+  .imagen1,
+  .imagen23 {
+    width: 100px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 100px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    margin-left: 20%; /* Ajusta el margen según sea necesario */
+  }
+
+  .inicio {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Ajusta la altura según sea necesario */
+    margin-left: 10%; /* Ajusta el margen según sea necesario */
+  }
+
+  .principio-container {
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    margin-left: 5%; /* Ajusta el margen según sea necesario */
+  }
+
+  .navbar ul {
+    margin-right: 20px;
+  }
+
+  .horizontal-bar {
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    margin-left: 5%; /* Ajusta el margen según sea necesario */
+  }
+
+  .footer {
+    padding: 15px;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 30px auto;
+  }
+
+  .servicios li {
+    width: 48%; /* Ajusta el ancho de los elementos de la lista según sea necesario */
+  }
+
+
+   /* Oculta la barra de navegación principal */
+  .navbar ul {
+    display: none;
+  }
+
+  
+  .quienesSomosSection {
+    width: 80%;
+    margin-left: 80px;
+  }
+  
+  .quienesSomosContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quienesSomosContent,
+  .quienesSomosImageContainer {
+    width: 95%; /* O ajusta el ancho según sea necesario */
+    margin: 0;
+    text-align: center;
+    height: 10%;
+  }
+
+  .quienesSomosImageContainer img {
+    width: 100%; /* O ajusta el ancho según sea necesario */
+    height: auto;
+  }
+
+  .historiaTitulo,
+  .misionTitulo {
+    text-align: center;
+  }
+  /* Equipo */
+#empleados {
+  text-align: center;
+  padding: 10px; /* Ajusta el espacio interno según sea necesario */
+  margin-left: 50px;
+  width: 90%;
+  height: 1200px;
+}
+
+.equipo-titulo {
+  color: #333;
+  font-size: 28px; /* Tamaño de letra más pequeño */
+}
+
+.empleados-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Ajusta el espacio entre las tarjetas según sea necesario */
+  margin-left: -5px; /* Ajusta el margen para centrar */
+}
+
+/* Estilos para las tarjetas */
+.tarjeta {
+  /*width: calc(100% - 10px); /* Ancho del 100% del contenedor con ajuste para el espacio entre tarjetas */
+  height: 250px; /* Altura más pequeña */
+  perspective: 100px; /* Ajusta la perspectiva según sea necesario */
+  /*width: 390px;*/
+  cursor: pointer;
+  position: relative;
+  transition: transform 1s ease; /* Ajusta la velocidad y suavidad aquí */
+  transform-style: preserve-3d;
+  margin: 2px 5px; /* Margen ajustado */
+  margin-right: 140px;
+  
+}
+
+.cara,
+.img-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Bordes más suaves */
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Cambiado de 'cover' a 'contain' para evitar recortes */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.cara-frontal,
+.cara-trasera {
+  transform: rotateY(0deg);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cara-trasera {
+  transform: rotateY(180deg);
+  background-color: #f4f4f4;
+  font-size: 14px;
+}
+
+h3,
+p,
+.puesto-empleado,
+.cara-trasera p.descripcion-empleado {
+  margin: 5px; /* Márgenes más pequeños */
+  color: #2b6888;
+  font-size: 14px; /* Tamaño de letra más pequeño */
+}
+
+.estilo-visita {
+  text-align: center;
+  margin-bottom: -50px; /* Ajusta el margen según sea necesario */
+}
+
+.horizontal-bar {
+  display: block;
+  width: 30px; /* Ajusta el ancho según sea necesario */
+  height: 3px; /* Grosor de las líneas */
+  background: #333; /* Color de las líneas */
+  position: relative;
+  margin: 10px auto; /* Ajusta el margen según sea necesario */
+}
+
+.nav-list {
+  position: fixed;
+}
+
+.horizontal-bar {
+  display: block; /* Muestra la barra horizontal en tamaños de pantalla pequeños */
+}
+  
+}
+
+/*Otro punto de ruptura */
+/* Nuevos estilos para tamaños de pantalla pequeños (por ejemplo, teléfonos) */
+@media screen and (max-width: 767px) {
+  .contenedor,
+  .contenedor1 {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .imagen,
+  .imagen1,
+  .imagen23 {
+    width: 80px; /* Ajusta el tamaño de las imágenes según sea necesario para dispositivos más pequeños */
+    height: 80px; /* Ajusta el tamaño de las imágenes según sea necesario para dispositivos más pequeños */
+    margin-left: 10%; /* Ajusta el margen según sea necesario para dispositivos más pequeños */
+  }
+
+  .inicio {
+    width: 90%; /* Ajusta el ancho según sea necesario para dispositivos más pequeños */
+    height: auto; /* Ajusta la altura según sea necesario para dispositivos más pequeños */
+    margin-left: 5%; /* Ajusta el margen según sea necesario para dispositivos más pequeños */
+  }
+/* Menú hamburguesa */
+.contenedorHam {
+  background-color: #333;
+  padding: 10px; /* Ajusta el espacio alrededor del contenedor según sea necesario */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-hamburguesa {
+  cursor: pointer;
+  padding: 10px; /* Ajusta el espacio alrededor del icono según sea necesario */
+}
+
+.menu-hamburguesa span {
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: #f4d838; /* Ajusta el color de las barras del icono */
+  margin: 5px 0;
+}
+
+#logoImagen {
+max-width: 100%;
+height: auto;
+display: block; /* Para quitar cualquier margen o relleno extra */
+float: left; /* Alinea la imagen a la izquierda */
+margin-right: 10px; /* Ajusta el espacio a la derecha de la imagen según sea necesario */
+}
+
+
+.menu-hamburguesa.transicion span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px) translateZ(10px);
+}
+
+.menu-hamburguesa.transicion span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-hamburguesa.transicion span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px) translateZ(10px);
+}
+.menu-icon {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+}
+  /* ... (ajustes adicionales según sea necesario para dispositivos más pequeños) ... */
 }

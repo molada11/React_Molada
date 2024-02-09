@@ -40,7 +40,11 @@ const Footer = () => {
       </div>
       <br />
       <br />
+      <div class="copyright">
+        <p>&copy; 2024 Sonrisa Brillante. Todos los derechos reservados.</p>
+      </div>
     </footer>
+    
   );
 };
 

@@ -14,11 +14,12 @@ import Servicios from './Components/Servicios';
 import Mapa from './Components/Mapa';
 
 
+
 import Noticias from './Components/Noticias';
 import Inicio from './Components/Inicio';
 import Navbar from './Components/Navbar';
 import ContactUs from './Components/ContactUs';
-
+import { useState , useEffect } from 'react';
 
 
 
@@ -31,13 +32,12 @@ const TourItem = ({ image, title, description }) => (
   </div>
 );
 
+
 const AnimatedTourItem = animated(TourItem);
 
 const App = () => {
-
-  
-
-  
+ 
+  const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -80,207 +80,197 @@ const App = () => {
     },
   ];
 
-  const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
+  //const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
 
   return (
     <>
-      <Navbar />
+       
+
+        <div className='todo'>
+        <Navbar />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+
+        <Inicio />
+        
+      
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       <br />
+      
+      
+
+  <Noticias />
+
+  <hr></hr>
+
+        <br />
+        
+    <Servicios />
+
+        <br />
+        <br />
+        
+      
+        <hr></hr>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <Equipo />
+    
+
+
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <hr/>
       <br />
       <br />
       
-
-      <Inicio />
+        
+        <Instalaciones tourData={tourData} springProps={springProps} />
       
-    
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-     <br />
-    
-     
 
-<Noticias />
-
-<hr></hr>
-
-      <br />
-      <br />
-  <Servicios />
-
-      <br />
-      <br />
-      
-    
       <hr></hr>
-      <br />
-      <br />
-      <br />
-      <br />
+      <br></br>
+      <br></br>
+      <br></br>
 
-      <Equipo />
-   
-
-
-    <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <QuienesSomos />
       
-      <hr/>
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <hr></hr>
+  <br></br>
+  <br></br>
+  <br></br>
+
+      <Mapa />
+    
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <hr></hr>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <h2 id="consejos-bucales">Consejos Bucales</h2>
+  <br></br>
+  <CarruselImagenes /> 
+
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <hr></hr>
+  <br></br>
+  <br></br>
+  <br></br>
+  <ContactUs />
+
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+
+  <hr></hr>
+
+  <br></br>
+
       
-    
+  <div class="estilo-visita">
+    <h2 id="visita">¡Ven a vernos!</h2>
+  </div>
+      <div className='App' style={{ width: '100%', height: '100%', position: 'absolute', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <ReactPlayer
+          url='https://https://www.youtube.com/watch?v=xxSmIgsIa38'
+          width='60%'  // Cambiado para ajustar el ancho del video
+          height='60%'  // Cambiado para ajustar la altura del video
+          controls
+          playing
+          muted
+          
+        />
+      </div>
       
-    <br />
-    <br />
+
     
-    
-    <br />
       <br />
-      <br />
-      <Instalaciones tourData={tourData} springProps={springProps} />
-     
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+  
 
-    <hr></hr>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    
-
-    <QuienesSomos />
-    
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<hr></hr>
-<br></br>
-<br></br>
-<br></br>
-
-    <Mapa />
-   
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<hr></hr>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<h2 id="consejos-bucales">Consejos Bucales</h2>
-<br></br>
-<CarruselImagenes /> 
-
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<hr></hr>
-<br></br>
-<br></br>
-<br></br>
-<ContactUs />
-
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<hr></hr>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-    
-<div class="estilo-visita">
-  <h2 id="visita">¡Ven a vernos!</h2>
-</div>
-    <div className='App' style={{ width: '100%', height: '100%', position: 'absolute', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <ReactPlayer
-        url='https://https://www.youtube.com/watch?v=xxSmIgsIa38'
-        width='60%'  // Cambiado para ajustar el ancho del video
-        height='60%'  // Cambiado para ajustar la altura del video
-        controls
-        playing
-        muted
-        onEnded={() => alert('Terminó Video')}
-      />
-    </div>
-    
-
-   
-    <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
- 
-
-      <Footer />
+        <Footer />
+        </div>
     </>
   );
 };
+
 
 export default App;

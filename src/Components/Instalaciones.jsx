@@ -1,4 +1,5 @@
 import React from 'react';
+import { Zoom } from 'react-reveal';
 
 const Instalaciones = ({ tourData, springProps }) => {
   // Verifica si tourData está definido antes de usar slice
@@ -6,6 +7,7 @@ const Instalaciones = ({ tourData, springProps }) => {
   const tourDataSlice2 = tourData?.slice(3) || [];
 
   return (
+    <Zoom>
     <section id="instalaciones">
       <h2 className="instalaciones-titulo">Nuestras Instalaciones</h2>
       <br/>
@@ -38,6 +40,7 @@ const Instalaciones = ({ tourData, springProps }) => {
         </div>
       </div>
     </section>
+    </Zoom>
   );
 };
 

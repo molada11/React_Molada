@@ -1,16 +1,18 @@
 import React from 'react';
+import { Zoom } from 'react-reveal';
 
 const ServiciosSection = () => {
   return (
+    <Zoom>
     <section id="nuestrosServicios" className="servicios-section">
       <div className="servicios-container">
         <div className="servicios-content">
           <h2 id="serviciosTitulo">Nuestros Servicios</h2>
 
           <p id="serviciosDescripcion">
-            En Sonrisa Brillante, nos enorgullece ofrecer una amplia gama de servicios odontológicos de alta calidad
+            {/*En Sonrisa Brillante, nos enorgullece ofrecer una amplia gama de servicios odontológicos de alta calidad
             para atender todas las necesidades de salud bucal de nuestros pacientes. Nuestro equipo de profesionales
-            altamente calificados está dedicado a proporcionar atención personalizada y centrada en el paciente.
+            altamente calificados está dedicado a proporcionar atención personalizada y centrada en el paciente.*/}
           </p>
 
           <div className="servicios-lista">
@@ -71,6 +73,7 @@ const ServiciosSection = () => {
         </div>
       </div>
     </section>
+    </Zoom>
   );
 };
 
